@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Col2_Pos1_MatchPos2
+  m_Name: Col2_Pos7_MatchPos3
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -65,9 +65,9 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 398
-        inSlope: -2980.909
-        outSlope: -2980.909
+        value: -283
+        inSlope: -1123.6364
+        outSlope: -1123.6364
         tangentMode: 34
         weightedMode: 0
         inWeight: 0.33333334
@@ -111,7 +111,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.36666667
-        value: -162
+        value: -43
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -120,7 +120,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.5
-        value: -162
+        value: -43
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -242,9 +242,9 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 398
-        inSlope: -2980.909
-        outSlope: -2980.909
+        value: -283
+        inSlope: -1123.6364
+        outSlope: -1123.6364
         tangentMode: 34
         weightedMode: 0
         inWeight: 0.33333334
@@ -380,7 +380,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.36666667
-        value: -162
+        value: -43
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -389,7 +389,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.5
-        value: -162
+        value: -43
         inSlope: 0
         outSlope: 0
         tangentMode: 136

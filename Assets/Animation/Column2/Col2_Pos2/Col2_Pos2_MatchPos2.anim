@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Col2_Pos1_MatchPos2
+  m_Name: Col2_Pos2_MatchPos2
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -65,9 +65,9 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 398
-        inSlope: -2980.909
-        outSlope: -2980.909
+        value: 284
+        inSlope: -2670
+        outSlope: -2670
         tangentMode: 34
         weightedMode: 0
         inWeight: 0.33333334
@@ -242,9 +242,9 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 398
-        inSlope: -2980.909
-        outSlope: -2980.909
+        value: 284
+        inSlope: -2670
+        outSlope: -2670
         tangentMode: 34
         weightedMode: 0
         inWeight: 0.33333334

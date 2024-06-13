@@ -26,7 +26,7 @@ public class TilesAnimator : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("Multiple instances of TilesAnimator detected! Destroying duplicate.");
+            Debug.LogWarning("Multiple instances of TilesAnimator detected! ");
             
         }
         

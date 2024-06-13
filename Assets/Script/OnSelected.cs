@@ -2,21 +2,27 @@ using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.VFX;
+
 
 public class OnSelected : MonoBehaviour
 {
 
-   
     public bool tileActivatedForAnimation = false;
-
     private TilesAnimator animator;
+    
     // Start is called before the first frame update
     void Start()
     {
+      
         
-    }
 
-    
+        
+
+    }
+   
+
+
 
     // Update is called once per frame
     void Update()
@@ -45,6 +51,7 @@ public class OnSelected : MonoBehaviour
             TileAnimationPlayed();
             Debug.Log("Animation cycle finished.");
         }
+        
     }
 
     public void TileOnSelected()
@@ -85,10 +92,15 @@ public class OnSelected : MonoBehaviour
         tileActivatedForAnimation = false;
         Debug.Log("tileActivatedForAnimation = false");
     }
+
     
+
    
 
 
 
-    
+
+
+
+
 }

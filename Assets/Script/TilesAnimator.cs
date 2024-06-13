@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class TilesAnimator : MonoBehaviour
 {
     public Animator animator;
 
     public static TilesAnimator instance;
-
+ 
     private void OnEnable()
     {
         if (instance == null)
@@ -28,7 +29,7 @@ public class TilesAnimator : MonoBehaviour
             Debug.LogWarning("Multiple instances of TilesAnimator detected! Destroying duplicate.");
             
         }
-
+        
     }
 
     public void AnimateMatchPos1()
@@ -45,14 +46,15 @@ public class TilesAnimator : MonoBehaviour
         }
     }
 
-   IEnumerator TurnAnimationFalse()
+    IEnumerator TurnAnimationFalse()
     {
         yield return new WaitForSeconds(0.4f);
         animator.SetBool("FlytoMatchPos1", false);
+        
         Destroy(gameObject);
     }
 
-
+   
 
 
 }

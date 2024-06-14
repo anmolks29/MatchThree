@@ -20,4 +20,9 @@ public class LoadScene : MonoBehaviour
     {
         SceneManager.LoadScene("Match3");
     }
+
+    public void OnSettingButton()
+    {
+        SceneManager.LoadScene("HomeScreen");
+    }
 }

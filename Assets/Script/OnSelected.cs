@@ -10,7 +10,10 @@ public class OnSelected : MonoBehaviour
 
     public bool tileActivatedForAnimation = false;
     private TilesAnimator animator;
-   
+
+    private bool tileMovingto1stMatch3Pos = false;
+    private bool tileMovingto2ndMatch3Pos = false;
+    private bool tileMovingto3rdMatch3Pos = false;
 
     // Update is called once per frame
     void Update()
@@ -34,10 +37,28 @@ public class OnSelected : MonoBehaviour
                 }
             }
 
-            Debug.Log("Calling AnimateMatchPos1.");
-            animator.AnimateMatchPos1();
-            TileAnimationPlayed();
-            Debug.Log("Animation cycle finished.");
+            if (tileMovingto1stMatch3Pos)
+            {
+                animator.AnimateMatchPos1();
+                TileAnimationPlayed();
+                tileMovingto1stMatch3Pos = false;
+                Debug.Log("Animation cycle finished.");
+            } 
+            if (tileMovingto2ndMatch3Pos)
+            {
+                animator.AnimateMatchPos2();
+                TileAnimationPlayed();
+                tileMovingto2ndMatch3Pos = false;
+                Debug.Log("Animation cycle finished.");
+            }
+            if (tileMovingto3rdMatch3Pos)
+            {
+                animator.AnimateMatchPos3();
+                TileAnimationPlayed();
+                tileMovingto3rdMatch3Pos = false;
+                Debug.Log("Animation cycle finished.");
+            }
+            
         }
         
     }
@@ -81,9 +102,23 @@ public class OnSelected : MonoBehaviour
         Debug.Log("tileActivatedForAnimation = false");
     }
 
-    
+    public void FirstTilesClicked()
+    {
+        tileMovingto1stMatch3Pos = true;
+    }
+    public void SecondTilesClicked()
+    {
+        tileMovingto2ndMatch3Pos = true;
+    }
+    public void ThirdTilesClicked()
+    {
+        tileMovingto3rdMatch3Pos = true;
+    }
 
-   
+
+
+
+
 
 
 
